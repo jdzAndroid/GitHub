@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".mainactivity.My">
+
+    <LinearLayout
+        android:background="#EDEDED"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="#436EEE"
+            >
+            <Button
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_login"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_style"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_register"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/today_temperature"
+                    android:textSize="12sp"
+                    android:textColor="#ffffff"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/tv_today_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="33/26"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/tv_my_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="深圳"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_today_PM"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="36"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    />
+
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_PM_state"
+                    android:layout_height="wrap_content"
+                    android:text="优"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    />
+
+
+
+            </LinearLayout>
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_style"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_integral"
+                android:text="@string/integral"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_layout_setting"
+            android:id="@+id/btn_my_footmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+            <TextView
+                style="@style/my_setting"
+                android:drawableLeft="@drawable/my_footremark"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_footmark"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:background="@drawable/my_layout_setting"
+            android:id="@+id/btn_my_downloadoffline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+            <TextView
+                style="@style/my_setting"
+                android:drawableLeft="@drawable/my_offline"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/download_offline"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/my_layout_setting"
+            android:id="@+id/btn_my_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+            <TextView
+                style="@style/my_setting"
+                android:drawableLeft="@drawable/my_collection"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/my_layout_setting"
+            android:id="@+id/btn_my_normaladdress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+            <TextView
+                style="@style/my_setting"
+                android:drawableLeft="@drawable/my_normal_address"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/normal_address"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_layout_setting"
+            android:id="@+id/btn_my_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+            <TextView
+                style="@style/my_setting"
+                android:drawableLeft="@drawable/my_order"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/orders"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            style=""
+            android:background="@drawable/my_layout_setting"
+            android:id="@+id/btn_my_contribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+            <TextView
+                android:drawableLeft="@drawable/my_contribute"
+                android:gravity="center"
+                style="@style/my_setting"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contribute"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:background="@drawable/my_layout_setting"
+            android:id="@+id/btn_my_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+            <TextView
+                android:gravity="center"
+                android:drawableLeft="@drawable/my_money"
+                style="@style/my_setting"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/money"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:background="@drawable/my_layout_setting"
+            android:id="@+id/btn_my_nonstop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+            <TextView
+                style="@style/my_setting"
+                android:gravity="center"
+                android:drawableLeft="@drawable/my_through"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_nonstop_number"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_layout_setting"
+            android:id="@+id/btn_my_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+            <TextView
+                style="@style/my_setting"
+                android:gravity="center"
+                android:drawableLeft="@drawable/my_distance"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/distance"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:background="@drawable/my_layout_setting"
+            android:id="@+id/btn_my_radar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+            <TextView
+                style="@style/my_setting"
+                android:drawableLeft="@drawable/my_radar"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radar"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:background="@drawable/my_layout_setting"
+            android:id="@+id/btn_my_activityarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+            <TextView
+                style="@style/my_setting"
+                android:gravity="center"
+                android:drawableLeft="@drawable/my_activityarea"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_area"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:background="@drawable/my_layout_setting"
+            android:id="@+id/btn_my_help_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+            <TextView
+                style="@style/my_setting"
+                android:drawableLeft="@drawable/my_help"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help_feedback"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:background="@drawable/my_layout_setting"
+            android:id="@+id/btn_my_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+            <TextView
+                style="@style/my_setting"
+                android:gravity="center"
+                android:drawableLeft="@drawable/my_setting"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_layout_setting"
+            android:id="@+id/btn_my_out_mymap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+
+            <TextView
+                style="@style/my_setting"
+                android:gravity="center"
+                android:drawableLeft="@drawable/my_outmap"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/out_baidumap"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

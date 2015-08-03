@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/set_navigation"
+    >
+<MultiSelectListPreference
+    android:title="@string/navagation_switch_day_night"
+    android:key="switch_day_night"
+    android:defaultValue="@string/navagation_auto"
+    android:entries="@array/day_or_night"
+    ></MultiSelectListPreference>
+
+
+    <MultiSelectListPreference
+        android:title="@string/navagation_savingpower"
+        android:key="switch_saving_power_mode"
+        android:defaultValue="@string/navagation_auto"
+        android:entries="@array/saving_power"
+        ></MultiSelectListPreference>
+
+
+
+    <MultiSelectListPreference
+        android:title="@string/navagation_retrivel_mode"
+        android:key="retrivel_mode"
+        android:defaultValue="@string/navagation_online_priority"
+        android:entries="@array/search_route"
+        ></MultiSelectListPreference>
+
+
+
+    <MultiSelectListPreference
+        android:title="@string/navagation_brocast_mode"
+        android:key="broadcast_mode"
+        android:defaultValue="@string/navagation_concise"
+        android:entries="@array/brodcast_mode"
+        ></MultiSelectListPreference>
+
+    <CheckBoxPreference
+        android:key="auto_update_offline_package"
+        android:title="@string/navagation_update_offline_package"
+        android:summary="@string/wifi_auto_updateofflinepackage"
+        ></CheckBoxPreference>
+    <CheckBoxPreference
+        android:title="@string/navagation_keep_screenlight"
+        android:key="navagation_keep_screenlight"
+        ></CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:title="@string/navagation_address_parking"
+        android:key="navagation_address_parking"
+        ></CheckBoxPreference>
+
+
+    <CheckBoxPreference
+        android:title="@string/navagation_start_walking"
+        android:key="navagation_start_walking"
+        ></CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:title="@string/navagation_show_routelan"
+        android:key="navagation_show_routelan"
+        ></CheckBoxPreference>
+
+
+
+    <PreferenceScreen
+        android:title="@string/navagation_manage"
+        android:key="manage_escape_point"
+        android:summary="@string/manage_escape_point"
+        ></PreferenceScreen>
+
+</PreferenceScreen>

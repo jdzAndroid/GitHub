@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:scrollbarStyle="insideOverlay"
+    android:gravity="center_horizontal"
+    android:background="#DCDCDC"
+    tools:context=".mainactivity.Nearby">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#DCDCDC"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="@android:color/holo_orange_light"
+            android:id="@+id/line_one"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/btn_nearby_goback"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/go_back"
+                />
+            <AutoCompleteTextView
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:iconifiedByDefault="true"
+                android:queryHint="@string/nearby_hint"
+                android:id="@+id/sound_search"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/search_img"
+                android:layout_height="40dp">
+
+            </AutoCompleteTextView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_viewpager"
+            android:layout_below="@+id/line_one"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            >
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_nearby"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+            </android.support.v4.view.ViewPager>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView
+                    android:id="@+id/dot1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dot_press"
+                    />
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/dot2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dot_press"
+                    />
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/dot3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dot_press"
+                    />
+
+            </LinearLayout>
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/layout_menu"
+            android:layout_below="@+id/layout_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            >
+            <LinearLayout
+
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    style="@style/nearby_text"
+                    android:clickable="true"
+                    android:text="@string/menu_beautiful_fruit"
+                    android:drawableTop="@drawable/menu_img"
+                    android:gravity="center"
+                    android:id="@+id/btn_search_beautiful_fruit"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+
+
+                <TextView
+                    style="@style/nearby_text"
+                    android:clickable="true"
+                    android:id="@+id/btn_menu_book_hotel"
+                    android:drawableTop="@drawable/menu_img"
+                    android:gravity="center"
+                    android:text="@string/menu_book_hotel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    style="@style/nearby_text"
+                    android:clickable="true"
+                    android:text="@string/menu_go_where"
+                    android:drawableTop="@drawable/menu_img"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:id="@+id/btn_menu_go_where"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    style="@style/nearby_text"
+                    android:clickable="true"
+                    android:text="@string/menu_search_scene"
+                    android:drawableTop="@drawable/menu_img"
+                    android:gravity="center"
+                    android:id="@+id/btn_search_scene"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                >
+                <TextView
+                    style="@style/nearby_text"
+                    android:clickable="true"
+                    android:id="@+id/btn_menu_search_group"
+                    android:text="@string/menu_search_group"
+                    android:drawableTop="@drawable/menu_img"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    style="@style/nearby_text"
+                    android:clickable="true"
+                    android:text="@string/menu_search_bus"
+                    android:drawableTop="@drawable/menu_img"
+                    android:gravity="center"
+                    android:id="@+id/btn_menu_search_bus"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+
+
+                <TextView
+                    style="@style/nearby_text"
+                    android:clickable="true"
+                    android:text="@string/menu_see_movie"
+                    android:id="@+id/btn_menu_see_movie"
+                    android:drawableTop="@drawable/menu_img"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+
+
+                <TextView
+                    style="@style/nearby_text"
+                    android:clickable="true"
+                    android:text="@string/menu_search_takeaway"
+                    android:id="@+id/btn_menu_search_takeaway"
+                    android:drawableTop="@drawable/menu_img"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_nearby"
+            android:layout_below="@+id/layout_menu"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    style="@style/nearby_text_moren"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/str_nearby_seacch"
+                    />
+
+                <TextView
+                    style="@style/nearby_text_moren"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/str_more"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                >
+                <Button
+
+                    style="@style/nearby_text"
+                    android:text="@string/str_leisure_time"
+                    android:clickable="false"
+                    android:background="#ffffff"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+                <Button
+                    style="@style/nearby_text"
+                    android:id="@+id/btn_internet_cafe"
+                    android:background="#ffffff"
+                    android:layout_width="0dp"
+                    android:text="@string/str_internet_cafe"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+                <Button
+                    style="@style/nearby_text"
+                    android:text="@string/str_ktv"
+                    android:id="@+id/btn_ktv"
+                    android:background="#ffffff"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+                <Button
+                    style="@style/nearby_text"
+                    android:text="@string/str_bath"
+                    android:id="@+id/btn_bath"
+                    android:background="#ffffff"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                >
+                <Button
+                    style="@style/nearby_text"
+                    android:text="@string/str_life"
+                    android:clickable="false"
+                    android:background="#ffffff"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+                <Button
+                    style="@style/nearby_text"
+                    android:text="@string/str_bank"
+                    android:id="@+id/btn_bank"
+                    android:background="#ffffff"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+                <Button
+                    style="@style/nearby_text"
+                    android:text="@string/str_supermarket"
+                    android:id="@+id/btn_supermarket"
+                    android:background="#ffffff"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+                <Button
+                    style="@style/nearby_text"
+                    android:text="@string/str_toilet"
+                    android:id="@+id/btn_toilet"
+                    android:background="#ffffff"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                >
+                <Button
+                    style="@style/nearby_text"
+                    android:text="@string/str_go_outside"
+                    android:clickable="false"
+                    android:background="#ffffff"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+                <Button
+                    style="@style/nearby_text"
+                    android:text="@string/str_busstation"
+                    android:id="@+id/btn_busstation"
+                    android:background="#ffffff"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+                <Button
+                    style="@style/nearby_text"
+                    android:text="@string/str_subway"
+                    android:id="@+id/btn_subway"
+                    android:background="#ffffff"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+                <Button
+                    style="@style/nearby_text"
+                    android:text="@string/str_fillingstation"
+                    android:id="@+id/btn_fillingstation"
+                    android:background="#ffffff"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/layout_recycleview_menu"
+            android:layout_below="@+id/layout_nearby"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center_horizontal"
+            >
+            <Button
+                android:layout_marginRight="2dp"
+                android:background="@drawable/nearby_mainmenu"
+                android:text="@string/str_all"
+                android:gravity="center"
+                android:id="@+id/btn_all"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:background="@drawable/nearby_mainmenu"
+                android:layout_marginRight="2dp"
+                android:text="@string/str_beautiful_fruit"
+                android:gravity="center"
+                android:id="@+id/btn_beautifu_fruit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+
+            <Button
+                android:background="@drawable/nearby_mainmenu"
+                android:layout_marginRight="2dp"
+                android:text="@string/str_entertainment"
+                android:gravity="center"
+                android:id="@+id/btn_entertainment"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+
+            <Button
+                android:background="@drawable/nearby_mainmenu"
+                android:text="@string/str_hotel"
+                android:gravity="center"
+                android:id="@+id/btn_hotel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/layout_recycleview_menu"
+            android:layout_width="match_parent"
+            android:layout_height="2320dp"
+            android:id="@+id/recycle_nearby"
+            android:background="@android:color/white"
+            ></android.support.v7.widget.RecyclerView>
+
+        <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:layout_below="@+id/layout_recycleview_menu"-->
+        <!--android:background="#FFFFFF"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:id="@+id/swipe_refreshlayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/recycle_nearby"-->
+        <!-->-->
+
+        <!--</android.support.v7.widget.RecyclerView>-->
+
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+    </RelativeLayout>
+</ScrollView>

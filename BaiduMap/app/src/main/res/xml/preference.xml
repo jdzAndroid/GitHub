@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <PreferenceCategory
+        android:enabled="true"
+        android:key="setting"
+        android:title="@string/setting"
+        android:icon="@drawable/go_back"
+        >
+        <CheckBoxPreference
+            android:enabled="true"
+            android:key="set_screen_light"
+            android:id="@+id/screen_light"
+            android:title="@string/set_screenlight"
+            android:icon="@drawable/set_screenlight"
+            >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:enabled="true"
+            android:key="set_showImg"
+            android:id="@+id/screen_show_image"
+            android:title="@string/set_isshowimage"
+            android:icon="@drawable/set_showimg"
+            >
+
+        </CheckBoxPreference>
+
+
+        <CheckBoxPreference
+            android:enabled="true"
+            android:key="set_showMsg"
+            android:id="@+id/screen_message_show"
+            android:title="@string/set_messageshow"
+            android:icon="@drawable/set_showmeg"
+            >
+
+        </CheckBoxPreference>
+
+
+        <CheckBoxPreference
+            android:enabled="true"
+            android:key="set_scroll_map"
+            android:id="@+id/screen_surffacr_on"
+            android:title="@string/set_issurffaceon"
+            android:icon="@drawable/set_switchsurface"
+            >
+
+        </CheckBoxPreference>
+
+
+        <CheckBoxPreference
+            android:enabled="true"
+            android:key="set_switch_visualAngle"
+            android:id="@+id/screen_auto_update"
+            android:title="@string/set_switchVisualAngle"
+            android:icon="@drawable/set_switchvisualangle"
+            >
+
+        </CheckBoxPreference>
+
+
+        <CheckBoxPreference
+            android:enabled="true"
+            android:key="set_autoUpdateUnderwifi"
+            android:id="@+id/screen_search_sound"
+            android:title="@string/set_autoupdate_wifi"
+            android:icon="@drawable/set_autoupdate"
+            >
+
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:enabled="true"
+            android:key="set_SearchbySound"
+            android:title="@string/set_SearchbySound"
+            android:icon="@drawable/set_searchbysound"
+            >
+
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:enabled="true"
+            android:key="set_AutoplayRouteState"
+            android:id="@+id/screen_search_sound"
+            android:title="@string/set_AutoplayRouteState"
+            android:icon="@drawable/set_autoplay"
+
+            >
+
+        </CheckBoxPreference>
+
+
+        <Preference
+            android:enabled="true"
+            android:key="set_navigation"
+            android:title="@string/set_navigation"
+            android:icon="@drawable/set_aavigationsetting"
+            >
+
+        </Preference>
+
+        <Preference
+            android:enabled="true"
+            android:key="set_resetmap"
+            android:icon="@drawable/set_resetmap"
+            android:title="@string/set_resetmap"
+            ></Preference>
+
+        <Preference
+            android:enabled="true"
+            android:key="set_abort"
+            android:icon="@drawable/set_abort"
+            android:title="@string/set_aboart"
+            ></Preference>
+
+
+
+        <Preference
+            android:enabled="true"
+            android:key="abort"
+            android:icon="@drawable/set_resetmap"
+            android:title="@string/set_aboart"
+            ></Preference>
+
+
+
+        <Preference
+            android:enabled="true"
+            android:key="newfunction"
+            android:icon="@drawable/set_newfunction"
+            android:title="@string/set_newfunction"
+            ></Preference>
+
+        <Preference
+            android:enabled="true"
+            android:key="apply"
+            android:icon="@drawable/set_apply"
+            android:title="@string/set_apply"
+            ></Preference>
+
+    </PreferenceCategory>
+</PreferenceScreen>

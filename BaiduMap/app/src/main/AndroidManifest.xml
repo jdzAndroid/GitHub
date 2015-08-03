@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.map.jdz.mymap" >
+
+    <uses-sdk
+        android:maxSdkVersion="22"
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" >
+    </uses-sdk>
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" >
+    </supports-screens>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:name=".InitMapkey.InitMapKey"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme" >
+        <activity
+            android:name=".Mainactivity.MapMainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Mainactivity.Nearby" >
+        </activity>
+        <activity android:name=".Mainactivity.My" />
+        <activity android:name=".Mainactivity.RoutePlan" />
+        <activity
+            android:name=".Mainactivity.Setting_activity"
+            android:theme="@style/my_Setting" />
+
+        <!-- 百度的API  KEY -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="prDZK2Gv29fOSYhxgnXAyk3T" />
+
+        <!-- 聚合数据的API  KEY -->
+        <meta-data
+            android:name="com.thinkland.juheapi.openid"
+            android:value="JHafbe3ee95b35731e7138990d7b8910f7" >
+        </meta-data>
+
+    </application>
+
+</manifest> <!-- 钥库类型: JKS -->
+<!-- 输入密钥库口令: -->
+<!-- 密钥库类型: JKS -->
+<!-- 密钥库提供方: SUN -->
+<!-- 您的密钥库包含 1 个条目 -->
+<!-- 别名: androiddebugkey -->
+<!-- 创建日期: 2015-7-29 -->
+<!-- 条目类型: PrivateKeyEntry -->
+<!-- 证书链长度: 1 -->
+<!-- 证书[1]: -->
+<!-- 所有者: CN=Android Debug, O=Android, C=US -->
+<!-- 发布者: CN=Android Debug, O=Android, C=US -->
+<!-- 序列号: 55b8277c -->
+<!-- 有效期开始日期: Wed Jul 29 09:08:12 CST 2015, 截止日期: Fri Jul 21 09:08:12 CST 2045 -->
+<!-- 证书指纹: -->
+<!-- MD5: 9A:E2:BC:12:2B:CE:7E:F1:34:00:81:7C:7B:45:CF:7A -->
+<!-- SHA1: BB:6C:4B:43:62:94:BD:97:54:B5:F5:29:9F:07:50:AA:D0:97:A0:4C -->
+<!-- SHA256: AB:26:6E:EF:AE:FD:E6:35:7C:75:84:96:37:29:26:D0:A7:58:CF:48:63:B2:BA:0A:BC:FC:AC:91:99:12:26:71 -->
+<!-- 签名算法名称: SHA1withRSA -->
+<!-- 版本: 3 -->
+<!-- ******************************************* -->

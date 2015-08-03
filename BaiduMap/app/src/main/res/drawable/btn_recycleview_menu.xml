@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <color android:color="@android:color/holo_blue_dark">
+
+        </color>
+    </item>
+
+    <item android:state_hovered="true">
+        <color android:color="@android:color/white">
+
+        </color>
+    </item>
+
+    <item android:state_empty="true">
+        <color android:color="@android:color/white">
+
+        </color>
+    </item>
+    <item android:state_first="true">
+        <color android:color="@android:color/white">
+
+        </color>
+    </item>
+
+
+</selector>
